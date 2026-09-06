@@ -1,3 +1,8 @@
-#Tp1 Pre entrega
-## Aprendiendo a utilizar git y visualcode
-### Pre entrega de tp n°1 haciendo primeros pasos con html y ccs, armando el cv profesional de una nueva manera, distinta aprendiendo distintas herramientas que a veces solemos ver a diario pero ignoramos de como se arman, utilicé colores oscuros y complementarios para darle un poco de ritmo, lo que si fue más complicado fue utilizar lo que es git, los comandos y tuve problemas con subir los archivos, tuve que crear otra carpeta, otro repositorio, ver que quede todo bien
+# Tp1 - Compu 3 Curriculum vitae, en HTML y ccs conjunto con flexbox
+## Herramientas a utilizar: Visual Studio Code, Ps y Google fonts 
+### Resolución de pantalla a utilizar: 1920 * 1080 
+### Tipografía Monteserrat y Open Sans (Google fonts)
+### Optimización de imagen mediante el uso de Ps a 72pp para que no sea tan pesada la imagen
+### Los colores utilizados en armonía azul marino para el header, footer y los usbtitulos secundarios,  Dorado para los enlaces de navegación y en el título principal, gris oscuro para el texto general del cuerpo de el documento y un color blanco con una pequeña tonalidad azul y gris.
+
+https://github.com/Lerisku/Cv-Hernan-Gonzalez

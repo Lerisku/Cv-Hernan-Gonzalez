@@ -1,151 +1,605 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Orbitron:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
 
 body {
-    background-color: #F7F9FC;
-    color: #333333;
+    background: linear-gradient(to bottom, #0b0c16, #040509);
+    color: #e2e8f0;
     font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
-    font-size: 16px;
-    margin: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    align-items: center;
 }
 
-main {
-    width: 100%;
-    max-width: 900px;
-    padding: 20px;
-    box-sizing: border-box;
-    flex: 1;
-}
 
-header {
-    width: 100%;
-    background-color: #1A365D;
-    display: flex;
-    justify-content: center;
-}
-
-.contenedor-header {
-    width: 100%;
-    max-width: 900px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px 20px 20px;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
-nav {
-    display: flex;
-    gap: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #C08A3E;
-    font-weight: 600;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #1A365D;
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    gap: 20px;
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Orbitron', sans-serif;
+    color: #cf6e24;
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 h1 {
-    font-family: 'Montserrat', sans-serif;
-    color: #C08A3E;
     font-size: 40px;
-    margin-bottom: 5px;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #1A365D;
-    font-size: 24px;
-    margin-top: 0;
-    margin-bottom: 20px;
+    font-size: 30px;
 }
 
 h3 {
-    font-family: 'Montserrat', sans-serif;
-    color: #1A365D;
-    font-size: 18px;
+    font-size: 24px;
+    border-bottom: 1px solid #cf6e24;
+    padding-bottom: 5px;
 }
 
-p {
-    font-style: normal;
-    margin-top: 0;
+p,
+li {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
-.lista-contacto {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+ul {
+    padding-left: 20px;
+    text-align: left;
 }
 
-.lista-contacto li {
-    margin-bottom: 8px;
-}
 
-.footer-texto {
+.pantalla-inicio {
+    max-width: 1920px;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: flex-start; 
+    align-items: flex-start;    
+    padding: 80px 120px;         
 }
 
-.footer-texto p {
+.titulo-juego h1 {
+    font-size: 110px;
+    color: transparent;
+    -webkit-text-stroke: 2px #cf6e24;
+    letter-spacing: 5px;
     margin: 0;
-    padding: 2px 0;
+    text-align: left;
 }
+
+.titulo-juego h2 {
+    font-size: 55px;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #cf6e24;
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+
+.menu-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 60px; 
+    align-items: flex-start;
+}
+
+.menu-principal a {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    color: #cf6e24;
+    font-size: 40px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 5px 15px;
+    border: 3px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease, text-shadow 0.15s ease;
+}
+
+.menu-principal a:hover {
+    color: #00ffcc;
+    border-color: #00ffcc;
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+}
+
+.barra-estado {
+    position: absolute;
+    bottom: 50px;
+    left: 120px;
+    right: 120px;
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.contenedor-global {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px;
+    flex: 1; 
+    width: 100%;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #0b0c16;
+    z-index: 1000;
+    border-bottom: 2px solid #cf6e24;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor-header {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu-interno {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-interno a {
+    text-decoration: none;
+    color: #cf6e24;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.menu-interno a:hover {
+    color: #00ffcc;
+    border-color: #00ffcc;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 40px;
+    margin-top: auto;
+    border-top: 1px solid #cf6e24;
+    background-color: #0b0c16;
+    font-family: 'Orbitron', sans-serif;
+    width: 100%;
+}
+
 
 .cv-contenedor {
     display: flex;
-    gap: 30px;
+    gap: 40px;
+    margin-top: 30px;
     align-items: flex-start;
 }
 
 .columna-lateral {
-    flex: 1;
-    background-color: #e2e8f0;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #cf6e24;
     padding: 20px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.foto-perfil {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #cf6e24;
+}
+
+.lista-contacto {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.lista-contacto b {
+    color: #cf6e24;
 }
 
 .columna-principal {
-    flex: 2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: left;
 }
 
 .encabezado-trabajo {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.encabezado-trabajo h4 {
-    margin: 0;
-    font-size: 16px;
-    color: #1A365D;
+.fecha {
+    color: #00ffcc;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
 }
 
-.fecha {
-    font-size: 0.9em;
-    color: #666;
-    font-weight: 600;
+
+.titulo-seccion {
+    font-size: 50px;
+    text-shadow: 0 0 10px rgba(207, 110, 36, 0.3);
+    text-align: left;
+}
+
+.bajada-seccion {
+    text-align: left;
+    color: #a0aec0;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.grilla-inventario {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.item-inventario {
+    position: relative;
+    width: 380px;
+    height: 400px;
+    border: 3px solid #cf6e24;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #040509;
+    transition: all 0.3s ease;
+}
+
+.item-inventario img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.item-info {
+    position: absolute;
+    bottom: -150%;
+    left: 0;
+    width: 100%;
+    background: rgba(4, 5, 9, 0.95);
+    padding: 25px 20px;
+    border-top: 3px solid #00ffcc;
+    transition: bottom 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.item-info h4 {
+    color: #00ffcc;
+    margin: 0;
+    font-size: 22px;
+}
+
+.item-info .categoria {
+    color: #cf6e24;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.item-info p {
+    color: #e2e8f0;
+    font-size: 14.5px;
+    line-height: 1.5;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.item-inventario:hover {
+    border-color: #00ffcc;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+}
+
+.item-inventario:hover img {
+    transform: scale(1.15);
+    opacity: 0.4;
+}
+
+.item-inventario:hover .item-info {
+    bottom: 0;
+}
+
+
+.opciones-contenedor-dos-columnas {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.columna-opcion {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.multimedia-caja {
+    width: 100%;
+    border: 2px solid #cf6e24;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background-color: #040509;
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid #cf6e24;
+    padding: 25px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: left;
+}
+
+.formulario-contacto label {
+    font-weight: bold;
+    color: #cf6e24;
+    text-align: left;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    background: #040509;
+    border: 1px solid #cf6e24;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 5px;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+    outline: none;
+    border-color: #00ffcc;
+}
+
+.formulario-contacto button {
+    background: transparent;
+    color: #cf6e24;
+    font-family: 'Orbitron', sans-serif;
+    border: 2px solid #cf6e24;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 5px;
+    align-self: flex-start;
+}
+
+.formulario-contacto button:hover {
+    background: #00ffcc;
+    color: #0b0c16;
+    border-color: #00ffcc;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
+}
+
+
+.seleccion-personajes {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.grilla-personajes {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.tarjeta-personaje {
+    background: rgba(255, 255, 255, 0.03);
+    border: 3px solid #cf6e24;
+    border-radius: 8px;
+    width: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: #040509;
+}
+
+.avatar-vectorial {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px;
+    background: rgba(0, 255, 204, 0.05);
+    border: 2px dashed #00ffcc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.info-personaje {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.info-personaje h3 {
+    text-align: center;
+    color: #00ffcc;
+    margin: 0;
+    font-size: 22px;
+}
+
+.clase-rol {
+    color: #cf6e24;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-personaje p {
+    text-align: center;
+    font-size: 14px;
+    color: #e2e8f0;
+    margin-bottom: 15px;
+}
+
+.btn-elegir {
+    display: inline-block;
+    background: transparent;
+    color: #cf6e24;
+    font-family: 'Orbitron', sans-serif;
+    border: 2px solid #cf6e24;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-top: auto;
+}
+
+.tarjeta-personaje:hover {
+    border-color: #00ffcc;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.3);
+}
+
+.tarjeta-personaje:hover .btn-elegir {
+    background: #00ffcc;
+    color: #0b0c16;
+    border-color: #00ffcc;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+}
+
+
+@media (max-width: 850px) {
+    .pantalla-inicio {
+        padding: 50px;
+    }
+
+    .cv-contenedor,
+    .opciones-contenedor-dos-columnas {
+        flex-direction: column;
+    }
+
+    .columna-lateral,
+    .columna-opcion {
+        width: 100%;
+    }
+
+    .item-inventario {
+        width: calc(50% - 15px);
+    }
+    
+    .grilla-personajes {
+        justify-content: center;
+    }
+    
+    .tarjeta-personaje {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .pantalla-inicio {
+        padding: 30px 20px;
+        min-height: 100vh;
+    }
+
+    .titulo-juego h1 {
+        font-size: 50px;
+    }
+
+    .titulo-juego h2 {
+        font-size: 25px;
+    }
+
+    .menu-principal {
+        margin-top: 80px;
+        gap: 20px;
+    }
+
+    .menu-principal a {
+        font-size: 28px;
+    }
+
+    .barra-estado {
+        position: static;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 10px;
+        margin-top: 60px;
+        font-size: 18px;
+    }
+
+    .contenedor-header nav {
+        flex-direction: column;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .item-inventario {
+        width: 100%;
+        height: 350px;
+    }
+
+    .titulo-seccion {
+        font-size: 35px;
+    }
+
+    .encabezado-trabajo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.img-personaje {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }

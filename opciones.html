@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Opciones - PortFolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <header>
+        <div class="contenedor-header">
+            <nav class="menu-interno">
+                <a href="inicio.html">Volver al inicio</a>
+                <a href="personaje.html">Nueva aventura</a>
+                <a href="cv.html">Perfil</a>
+                <a href="inventario.html">Inventario</a>
+                <a href="opciones.html">Opciones</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor-global">
+        <h1 class="titulo-seccion">Configuración y Soporte</h1>
+        <p class="bajada-seccion">Administración del sistema y canales de comunicación con el servidor.</p>
+
+        <div class="opciones-contenedor-dos-columnas">
+            <section id="Multimedia" class="columna-opcion">
+                <h2>Cinemática</h2>
+                <div class="multimedia-caja">
+                    <video controls width="100%">
+                        <source src="fotos/sh.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+            </section>
+
+            <section id="Contacto" class="columna-opcion">
+                <h2>Soporte y Contacto</h2>
+                <form action="#" method="POST" class="formulario-contacto">
+                    <label for="nombre">Nombre de tu personaje / Jugador:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Pepe" required>
+                    
+                    <label for="asunto">Asunto / Bug a reporte</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo del contacto" required>
+                    
+                    <label for="mensaje">Mensaje para el administrador:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje acá..." required></textarea>
+                    
+                    <button type="submit">Enviar Ticket de Soporte</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-texto">
+            <p>Tp 3 Compu III - Estado del server: En producción...</p>
+        </div>
+    </footer>
+
+</body>
+</html>

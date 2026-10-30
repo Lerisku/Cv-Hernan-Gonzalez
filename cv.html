@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil - PortFolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
     <link href="estilos.css" rel="stylesheet" type="text/css">
@@ -10,43 +11,43 @@
 <body>
 
     <header>
-        <div class="contenedor-header">
-            <nav class="menu-interno">
-                <a href="inicio.html">Volver al inicio</a>
-                <a href="personaje.html">Nueva aventura</a>
-                <a href="cv.html">Perfil</a>
-                <a href="inventario.html">Inventario</a>
-                <a href="opciones.html">Opciones</a>
-            </nav>
-        </div>
+        <nav class="menu-interno">
+            <a href="index.html">Volver al inicio</a>
+            <a href="personaje.html">Nueva aventura</a>
+            <a href="cv.html">Perfil</a>
+            <a href="inventario.html">Inventario</a>
+            <a href="opciones.html">Opciones</a>
+        </nav>
     </header>
 
     <main class="contenedor-global">
-        <h1>Curriculum Vitae</h1>
-        <h2>Hernán Alberto González</h2>
+        <section class="encabezado-seccion">
+            <h1>Curriculum Vitae</h1>
+            <h2>Hernán Alberto González</h2>
+        </section>
         
         <div class="cv-contenedor">
             <aside class="columna-lateral">
-                <img src="fotos/Web.jpg" alt="Foto de Perfil" class="foto-perfil">
+                <img src="fotos/yo.jpg" alt="Foto de Perfil" width="300" height="300" class="foto-perfil">
 
                 <section id="Datos-Contacto">
                     <h3>Datos Personales</h3>
                     <ul class="lista-contacto">
-                        <li><b>Nacimiento:</b> Mayo de 1810</li>
-                        <li><b>Nacionalidad:</b> Argentino</li>
-                        <li><b>Estado Civil:</b> Soltero</li>
-                        <li><b>Ubicación:</b> Zona Sur, Gran Buenos Aires</li>
-                        <li><b>Teléfono:</b> Palomas mensajeras</li>
-                        <li><b>Email:</b> AguanteHtml@yahoo.com.ar</li>
+                        <li><span class="resaltado">Nacimiento:</span> Mayo de 1810</li>
+                        <li><span class="resaltado">Nacionalidad:</span> Argentino</li>
+                        <li><span class="resaltado">Estado Civil:</span> Soltero</li>
+                        <li><span class="resaltado">Ubicación:</span> Zona Sur, Gran Buenos Aires</li>
+                        <li><span class="resaltado">Teléfono:</span> Palomas mensajeras</li>
+                        <li><span class="resaltado">Email:</span> AguanteHtml@yahoo.com.ar</li>
                     </ul>
                 </section>
 
                 <section id="Habilidades">
                     <h3>Herramientas e Idiomas</h3>
                     <ul>
-                        <li><b>Diseño:</b> Photoshop (Ps), Illustrator (Ai), InDesign (Id), Figma</li>
-                        <li><b>Web:</b> HTML5, CSS3</li>
-                        <li><b>Idiomas:</b>
+                        <li><span class="resaltado">Diseño:</span> Photoshop (Ps), Illustrator (Ai), InDesign (Id), Figma</li>
+                        <li><span class="resaltado">Web:</span> HTML5, CSS3</li>
+                        <li><span class="resaltado">Idiomas:</span>
                             <ul>
                                 <li>Español: Nativo</li>
                                 <li>Inglés: Nivel Medio</li>
@@ -59,12 +60,12 @@
             <div class="columna-principal">
                 <section id="Perfil">
                     <h3>Objetivo Laboral y Perfil</h3>
-                    <p>
+                    <p class="texto-legible">
                         Unirme a una organización o equipo de trabajo donde poder desempeñar funciones acordes a la
                         carrera universitaria que estoy promediando para desarrollar las habilidades y aptitudes específicas de
                         dicho rol y ser un joven profesional.
                     </p>
-                    <p>
+                    <p class="texto-legible">
                         Soy una persona cooperativa que sabe trabajar en equipo; laboralmente soy paciente y
                         estable. Los años trabajados en el área de Atención al Cliente me permitieron desarrollar
                         competencias orientadas a colocar al cliente en el centro de la gestión, herramienta primordial en el ámbito
@@ -77,11 +78,11 @@
                     <h3>Formación Académica</h3>
                     <ul>
                         <li>
-                            <b>Lic. en Diseño y Comunicación Visual</b> (2018 - Actualmente estudiando)<br>
+                            <span class="resaltado">Lic. en Diseño y Comunicación Visual</span> (2018 - Actualmente estudiando)<span class="salto-linea"></span>
                             <i>Universidad Nacional de Lanús</i>
                         </li>
                         <li>
-                            <b>Bachiller en Ciencias Sociales</b> (2009 - 2012. Graduado)<br>
+                            <span class="resaltado">Bachiller en Ciencias Sociales</span> (2009 - 2012. Graduado)<span class="salto-linea"></span>
                             <i>Escuela de Educación Media Nro. 12</i> — José Mármol, Almirante Brown
                         </li>
                     </ul>
@@ -94,8 +95,8 @@
                             <h4>Atención al Público — Heladería "Los Amores"</h4>
                             <span class="fecha">2009 - 2017</span>
                         </div>
-                        <p><b>Ubicación:</b> 20 de Septiembre 1795, Rafael Calzada</p>
-                        <p><b>Tareas realizadas:</b> Cobro y emisión de tickets, preparación de productos, limpieza y desinfección, control de temperatura y atención al cliente.</p>
+                        <p><span class="resaltado">Ubicación:</span> 20 de Septiembre 1795, Rafael Calzada</p>
+                        <p><span class="resaltado">Tareas realizadas:</span> Cobro y emisión de tickets, preparación de productos, limpieza y desinfección, control de temperatura y atención al cliente.</p>
                     </article>
                 </section>
             </div>

@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventario - PortFolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
     <link href="estilos.css" rel="stylesheet" type="text/css">
@@ -9,51 +10,116 @@
 <body>
 
     <header>
-        <div class="contenedor-header">
-            <nav class="menu-interno">
-                <a href="inicio.html">Volver al inicio</a>
-                <a href="personaje.html">Nueva aventura</a>
-                <a href="cv.html">Perfil</a>
-                <a href="inventario.html">Inventario</a>
-                <a href="opciones.html">Opciones</a>
-            </nav>
-        </div>
+        <nav class="menu-interno">
+            <a href="index.html">Volver al inicio</a>
+            <a href="personaje.html">Nueva aventura</a>
+            <a href="cv.html">Perfil</a>
+            <a href="inventario.html">Inventario</a>
+            <a href="opciones.html">Opciones</a>
+        </nav>
     </header>
 
     <main class="contenedor-global">
-        <h1 class="titulo-seccion">Inventario de Proyectos</h1>
-        <p class="bajada-seccion">Seleccioná un ítem para ver sus estadísticas y detalles de desarrollo.</p>
+        <section class="encabezado-seccion">
+            <h1 class="titulo-seccion">Inventario de Proyectos</h1>
+            <p class="bajada-seccion">Seleccioná un ítem para expandir sus estadísticas y ver la galería completa.</p>
+        </section>
 
         <section id="Galeria-Inventario">
             <div class="grilla-inventario">
-                <article class="item-inventario">
-                    <img src="fotos/tp1.png" alt="Revista Everlong">
+                
+                <a href="#modal-1" class="item-inventario" style="text-decoration: none;">
+                    <img src="fotos/tp1.png" alt="Revista Everlong" width="380" height="400">
                     <div class="item-info">
                         <h4>Revista Everlong</h4>
-                        <span class="categoria">Prensa</span>
-                        <p>Impresión de revista tp final de compu 2, donde nos hicieron hacer una biografía y un retrato de nuestras familias</p>
+                        <p class="categoria">Prensa</p>
+                        <p>Clickeá para inspeccionar el ítem.</p>
                     </div>
-                </article>
+                </a>
 
-                <article class="item-inventario">
-                    <img src="fotos/sa.png" alt="Marca de ropa">
+                <a href="#modal-2" class="item-inventario" style="text-decoration: none;">
+                    <img src="fotos/sa.png" alt="Marca de ropa" width="380" height="400">
                     <div class="item-info">
-                        <h4>Marca de ropa Sayonara</h4>
-                        <span class="categoria">Diseño virtual</span>
-                        <p>Diseño y maquetación en formato A4 para proyecto de ropa para una amiga.</p>
+                        <h4>Marca Sayonara</h4>
+                        <p class="categoria">Diseño virtual</p>
+                        <p>Clickeá para inspeccionar el ítem.</p>
                     </div>
-                </article>
+                </a>
 
-                <article class="item-inventario">
-                    <img src="fotos/e.jpeg" alt="Collage">
+                <a href="#modal-3" class="item-inventario" style="text-decoration: none;">
+                    <img src="fotos/e.jpeg" alt="Collage" width="380" height="400">
                     <div class="item-info">
-                        <h4>Collage</h4>
-                        <span class="categoria">Diseño virtual</span>
-                        <p>Diseño en ps, para un tp de computación I hace un par de años elementos que inician con la letra E.</p>
+                        <h4>Collage E</h4>
+                        <p class="categoria">Diseño virtual</p>
+                        <p>Clickeá para inspeccionar el ítem.</p>
                     </div>
-                </article>
+                </a>
+
             </div>
         </section>
+
+
+        <div id="modal-1" class="modal-galeria">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="contenido-modal">
+                <div class="imagen-modal">
+                    <img src="fotos/tp1.png" alt="Revista Everlong">
+                </div>
+                <div class="comentarios-modal">
+                    <h3>Revista Everlong</h3>
+                    <p class="categoria">Proyecto de Prensa</p>
+                    <p>Impresión de revista TP final de Compu 2, donde nos hicieron armar una biografía y un retrato de nuestras familias.</p>
+                    <span class="salto-linea"></span>
+                    <h4 style="font-size: 16px; color: #00ffcc;">Estadísticas del ítem:</h4>
+                    <ul>
+                        <li><span class="resaltado">Software:</span> Adobe InDesign</li>
+                        <li><span class="resaltado">Rol:</span> Maquetación</li>
+                        <li><span class="resaltado">Experiencia obtenida:</span> +500 XP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-2" class="modal-galeria">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="contenido-modal">
+                <div class="imagen-modal">
+                    <img src="fotos/sa.png" alt="Marca Sayonara">
+                </div>
+                <div class="comentarios-modal">
+                    <h3>Marca Sayonara</h3>
+                    <p class="categoria">Identidad y Diseño virtual</p>
+                    <p>Diseño y maquetación en formato A4 para el proyecto de indumentaria de una amiga.</p>
+                    <span class="salto-linea"></span>
+                    <h4 style="font-size: 16px; color: #00ffcc;">Estadísticas del ítem:</h4>
+                    <ul>
+                        <li><span class="resaltado">Software:</span> Illustrator & Photoshop</li>
+                        <li><span class="resaltado">Impacto:</span> +30 Carisma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-3" class="modal-galeria">
+            <a href="#!" class="cerrar-modal">&times;</a>
+            <div class="contenido-modal">
+                <div class="imagen-modal">
+                    <img src="fotos/e.jpeg" alt="Collage E">
+                </div>
+                <div class="comentarios-modal">
+                    <h3>Collage "E"</h3>
+                    <p class="categoria">Composición Gráfica</p>
+                    <p>Diseño en PS para un TP de Computación I hace un par de años. Consta de elementos que inician exclusivamente con la letra E.</p>
+                    <span class="salto-linea"></span>
+                    <h4 style="font-size: 16px; color: #00ffcc;">Estadísticas del ítem:</h4>
+                    <ul>
+                        <li><span class="resaltado">Software:</span> Adobe Photoshop</li>
+                        <li><span class="resaltado">Creatividad:</span> Crítico x2</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer>

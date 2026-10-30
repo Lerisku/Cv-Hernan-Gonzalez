@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selección de Personaje - PortFolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
     <link href="estilos.css" rel="stylesheet" type="text/css">
@@ -9,57 +10,55 @@
 <body>
 
     <header>
-        <div class="contenedor-header">
-            <nav class="menu-interno">
-                <a href="inicio.html">◄ Volver al inicio</a>
-                <a href="cv.html">Perfil</a>
-                <a href="inventario.html">Inventario</a>
-                <a href="opciones.html">Opciones</a>
-            </nav>
-        </div>
+        <nav class="menu-interno">
+            <a href="index.html">Volver al inicio</a>
+            <a href="cv.html">Perfil</a>
+            <a href="inventario.html">Inventario</a>
+            <a href="opciones.html">Opciones</a>
+        </nav>
     </header>
 
     <main class="contenedor-global">
-        <h1 class="titulo-seccion">Seleccioná tu Clase</h1>
-        <p class="bajada-seccion">Elegí el avatar vectorial que representará tus estadísticas en esta aventura.</p>
+        
+        <section class="encabezado-seccion">
+            <h1 class="titulo-seccion">Seleccioná tu Clase</h1>
+            <p class="bajada-seccion">Elegí el avatar vectorial que representará tus estadísticas en esta aventura.</p>
+        </section>
 
         <section class="seleccion-personajes">
             <div class="grilla-personajes">
                 
-                <!-- mago -->
                 <article class="tarjeta-personaje">
                     <div class="avatar-vectorial">
-                        <img src="fotos/mago.jpg" alt="Mago UI / UX" class="img-personaje">
+                        <img src="fotos/mago.jpg" alt="Mago UI / UX" width="100" height="100" class="img-personaje">
                     </div>
                     <div class="info-personaje">
                         <h3>Mago UI / UX</h3>
-                        <span class="clase-rol">Especialidad: Figma & Layouts</span>
+                        <p class="clase-rol">Especialidad: Figma & Layouts</p>
                         <p>Dominio avanzado de grillas, maquetación semántica y prototipado de alta fidelidad.</p>
                         <a href="cv.html" class="btn-elegir">Elegir Clase</a>
                     </div>
                 </article>
 
-                <!-- guerrero -->
                 <article class="tarjeta-personaje">
                     <div class="avatar-vectorial">
-                        <img src="fotos/guerrero.jpg" alt="Guerrero Front-End" class="img-personaje">
+                        <img src="fotos/guerrero.jpg" alt="Guerrero Front-End" width="100" height="100" class="img-personaje">
                     </div>
                     <div class="info-personaje">
                         <h3>Guerrero Front-End</h3>
-                        <span class="clase-rol">Especialidad: HTML5 & CSS3</span>
+                        <p class="clase-rol">Especialidad: HTML5 & CSS3</p>
                         <p>Resistencia pura ante bugs de diseño, animaciones fluidas y diseño adaptable (@media).</p>
                         <a href="cv.html" class="btn-elegir">Elegir Clase</a>
                     </div>
                 </article>
 
-                <!-- asesino -->
                 <article class="tarjeta-personaje">
                     <div class="avatar-vectorial">
-                        <img src="fotos/picaro.jpg" alt="Pícaro Gráfico" class="img-personaje">
+                        <img src="fotos/picaro.jpg" alt="Pícaro Gráfico" width="100" height="100" class="img-personaje">
                     </div>
                     <div class="info-personaje">
                         <h3>Pícaro Gráfico</h3>
-                        <span class="clase-rol">Especialidad: Photoshop & Illustrator</span>
+                        <p class="clase-rol">Especialidad: Photoshop & Illustrator</p>
                         <p>Velocidad letal en edición de vectores, manejo de color y preparación de originales para imprenta.</p>
                         <a href="cv.html" class="btn-elegir">Elegir Clase</a>
                     </div>

@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opciones - PortFolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
     <link href="estilos.css" rel="stylesheet" type="text/css">
@@ -9,47 +10,53 @@
 <body>
 
     <header>
-        <div class="contenedor-header">
-            <nav class="menu-interno">
-                <a href="inicio.html">Volver al inicio</a>
-                <a href="personaje.html">Nueva aventura</a>
-                <a href="cv.html">Perfil</a>
-                <a href="inventario.html">Inventario</a>
-                <a href="opciones.html">Opciones</a>
-            </nav>
-        </div>
+        <nav class="menu-interno">
+            <a href="index.html">Volver al inicio</a>
+            <a href="personaje.html">Nueva aventura</a>
+            <a href="cv.html">Perfil</a>
+            <a href="inventario.html">Inventario</a>
+            <a href="opciones.html">Opciones</a>
+        </nav>
     </header>
 
     <main class="contenedor-global">
-        <h1 class="titulo-seccion">Configuración y Soporte</h1>
-        <p class="bajada-seccion">Administración del sistema y canales de comunicación con el servidor.</p>
+        <section class="encabezado-seccion">
+            <h1 class="titulo-seccion">Configuración y Soporte</h1>
+            <p class="bajada-seccion">Administración del sistema y canales de comunicación con el servidor.</p>
+        </section>
 
         <div class="opciones-contenedor-dos-columnas">
+            
             <section id="Multimedia" class="columna-opcion">
                 <h2>Cinemática</h2>
                 <div class="multimedia-caja">
-                    <video controls width="100%">
+                    <video controls class="video-ajustado">
                         <source src="fotos/sh.mp4" type="video/mp4">
                         Tu navegador no soporta la etiqueta de video.
                     </video>
+                </div>
+                <div class="texto-cinematica">
+                    <h3>Archivo de Datos</h3>
+                    <p>Es un trabajo práctico de <span class="resaltado">Espacio Tipográfico 2 (Cátedra Aversa)</span>, en el cual teníamos que elegir una película y hacer un stop-motion que la represente, lo cual refleja soledad, tristeza, destrucción y miseria.</p>
                 </div>
             </section>
 
             <section id="Contacto" class="columna-opcion">
                 <h2>Soporte y Contacto</h2>
                 <form action="#" method="POST" class="formulario-contacto">
-                    <label for="nombre">Nombre de tu personaje / Jugador:</label>
+                    <label for="nombre">Nombre de tu personaje:</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Ej: Pepe" required>
                     
-                    <label for="asunto">Asunto / Bug a reporte</label>
+                    <label for="asunto">Asunto a reportar:</label>
                     <input type="text" id="asunto" name="asunto" placeholder="Motivo del contacto" required>
                     
                     <label for="mensaje">Mensaje para el administrador:</label>
                     <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje acá..." required></textarea>
                     
-                    <button type="submit">Enviar Ticket de Soporte</button>
+                    <button type="submit">Enviar Ticket</button>
                 </form>
             </section>
+
         </div>
     </main>
 
